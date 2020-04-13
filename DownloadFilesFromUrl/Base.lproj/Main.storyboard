@@ -23,21 +23,46 @@
                                     <constraint firstAttribute="height" constant="150" id="OF3-WX-pN4"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ml1-O0-kCK">
+                                <rect key="frame" x="20" y="692" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5NG-GX-N5C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60J-eY-ROO">
+                                <rect key="frame" x="172.5" y="782" width="69" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sQq-Gj-fkp"/>
+                                </constraints>
+                                <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="downloadFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8WM-Z4-24f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="60J-eY-ROO" secondAttribute="bottom" constant="50" id="4Wq-12-Zvw"/>
+                            <constraint firstItem="Ml1-O0-kCK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8UC-rj-q9A"/>
+                            <constraint firstItem="60J-eY-ROO" firstAttribute="top" secondItem="Ml1-O0-kCK" secondAttribute="bottom" constant="50" id="VzS-xd-07t"/>
                             <constraint firstItem="mQm-Zq-lA8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X0q-DB-vg8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ml1-O0-kCK" secondAttribute="trailing" constant="20" id="cfL-66-6Hv"/>
                             <constraint firstItem="mQm-Zq-lA8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="tWI-Nb-ueW"/>
+                            <constraint firstItem="60J-eY-ROO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCs-ua-E1s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="downloadFileButton" destination="60J-eY-ROO" id="2Js-7x-aPz"/>
                         <outlet property="progressBar" destination="mQm-Zq-lA8" id="2EP-Fu-t4B"/>
+                        <outlet property="urlTextField" destination="Ml1-O0-kCK" id="37p-eA-fFN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="115"/>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
 </document>
