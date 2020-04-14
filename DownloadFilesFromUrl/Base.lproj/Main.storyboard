@@ -41,14 +41,23 @@
                                     <action selector="downloadFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8WM-Z4-24f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xh-xg-gzU">
+                                <rect key="frame" x="321" y="64" width="73" height="30"/>
+                                <state key="normal" title="Quick look"/>
+                                <connections>
+                                    <action selector="openQuickLookController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O4I-dn-2LC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="60J-eY-ROO" secondAttribute="bottom" constant="50" id="4Wq-12-Zvw"/>
                             <constraint firstItem="Ml1-O0-kCK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8UC-rj-q9A"/>
+                            <constraint firstItem="1Xh-xg-gzU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Hod-10-Pqh"/>
                             <constraint firstItem="60J-eY-ROO" firstAttribute="top" secondItem="Ml1-O0-kCK" secondAttribute="bottom" constant="50" id="VzS-xd-07t"/>
                             <constraint firstItem="mQm-Zq-lA8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X0q-DB-vg8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ml1-O0-kCK" secondAttribute="trailing" constant="20" id="cfL-66-6Hv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Xh-xg-gzU" secondAttribute="trailing" constant="20" id="nXj-Fi-m9G"/>
                             <constraint firstItem="mQm-Zq-lA8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="tWI-Nb-ueW"/>
                             <constraint firstItem="60J-eY-ROO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCs-ua-E1s"/>
                         </constraints>
