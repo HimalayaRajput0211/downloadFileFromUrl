@@ -32,7 +32,8 @@ class ViewController: UIViewController {
     
     private func downloadFileFromString(_ urlString: String) {
         guard let url = URL(string: urlString) else { return }
-        AF.download(url).response { (response) in
+//        AF.download(url).response { (response) in
+        AF.download(url, interceptor: nil, to: .none).response { response in
             switch response.result {
             case .success(let fileUrl):
                 guard let filePath = fileUrl?.path else { return }
